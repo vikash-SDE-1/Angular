@@ -1,17 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Greet } from './greet/greet';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Greet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  name="unknown"
-
-  sayhello()
-  {
-    this.name="vikash"
-  }
+  
 }
